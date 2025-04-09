@@ -1,0 +1,18 @@
+{
+    "rtsp_streams": {
+        "教室1_教师张三": {
+            "classroom_id": "教室1",
+            "teacher_name": "教师张三",
+            "rtsp_url": "rtsp://localhost:8554/mystream1",
+            "status": "stopped",
+            "last_error": null
+        },
+        "教室2_教师李四": {
+            "classroom_id": "教室2",
+            "teacher_name": "教师李四",
+            "rtsp_url": "rtsp://localhost:8554/mystream2",
+            "status": "stopped",
+            "last_error": null
+        }
+    }
+}
