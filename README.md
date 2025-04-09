@@ -16,10 +16,6 @@
 ### templates目录
 - `index.html` - 主页面模板
 
-### static目录
-- `css/` - CSS样式文件目录
-- `js/` - JavaScript脚本目录
-
 ### captured_videos目录
 每个stream_id都有以下子目录结构：
 - `videos/` - 录制的视频片段
