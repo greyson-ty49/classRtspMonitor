@@ -4,26 +4,31 @@
 这是一个基于Python的RTSP流监控系统，通过Web界面让用户可以轻松添加、管理和监控多个RTSP流。系统核心功能包括：录制RTSP视频流、提取音频、使用Whisper进行语音识别、利用DeepSeek API分析内容检测不当言论，并实时展示结果。项目将原有的命令行工具转换为功能完善的Web应用程序，使非技术用户也能方便操作。
 
 ## 项目目录结构
-rtsp_monitoring_system/
-├── app.py # Flask Web应用主程序
-├── rtsp_recorder.py # RTSP录制和分析核心模块
-├── templates/ # HTML模板目录
-│ └── index.html # 主页面模板
-├── static/ # 静态资源目录
-│ ├── css/ # CSS样式文件
-│ └── js/ # JavaScript脚本
-├── captured_videos/ # 视频存储目录
-│ └── [stream_id]/ # 按流ID分类的子目录
-│ ├── videos/ # 录制的视频片段
-│ ├── audio/ # 提取的音频文件
-│ ├── transcripts/ # 语音识别结果
-│ └── analysis/ # 内容分析结果
-├── inappropriate_contents/ # 不当言论集中存储目录
-│ └── inappropriate_content_YYYYMM.txt # 按月归档的不当言论
-├── rtsp_config.json # 配置文件(UTF-8编码)
-├── requirements.txt # Python依赖项列表
-├── rtsp_recorder.log # 核心功能日志
-└── rtsp_web.log # Web界面日志
+
+### 根目录
+- `app.py` - Flask Web应用主程序
+- `rtsp_recorder.py` - RTSP录制和分析核心模块
+- `rtsp_config.json` - 配置文件(UTF-8编码)
+- `requirements.txt` - Python依赖项列表
+- `rtsp_recorder.log` - 核心功能日志
+- `rtsp_web.log` - Web界面日志
+
+### templates目录
+- `index.html` - 主页面模板
+
+### static目录
+- `css/` - CSS样式文件目录
+- `js/` - JavaScript脚本目录
+
+### captured_videos目录
+每个stream_id都有以下子目录结构：
+- `videos/` - 录制的视频片段
+- `audio/` - 提取的音频文件
+- `transcripts/` - 语音识别结果
+- `analysis/` - 内容分析结果
+
+### inappropriate_contents目录
+- `inappropriate_content_YYYYMM.txt` - 按月归档的不当言论
 
 
 ## 技术栈
