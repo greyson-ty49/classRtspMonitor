@@ -151,6 +151,7 @@ pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org simple
 ## 运行与维护
 
 ### 启动系统
+运行start.py即可启动程序。
 默认情况下，Web界面将在 http://localhost:5000 可访问。
 
 ### 常见问题与解决方案
