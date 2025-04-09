@@ -123,7 +123,7 @@ response = requests.post(
 )
 ```
 
-## 配置与性能优化
+## 配置
 
 ### 关键配置参数
 - SEGMENT_DURATION: 视频分段时长(秒)
