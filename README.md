@@ -149,12 +149,8 @@ pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org simple
 
 - 安装 FFmpeg (如果尚未安装)
 
-- 安装 Python 依赖
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
+- 安装 Python 依赖   pip install -r requirements.txt
+   
 - 注意：Whisper 模型会在首次运行时自动下载，这可能需要一些时间。
 
 ```
