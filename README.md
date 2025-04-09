@@ -146,6 +146,31 @@ pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org -r req
 
 # 安装simple-websocket提高WebSocket性能
 pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org simple-websocket
+
+# 1. 安装 FFmpeg (如果尚未安装)
+
+   Ubuntu/Debian:
+   ```bash
+   sudo apt update
+   sudo apt install ffmpeg
+   ```
+
+   CentOS/RHEL:
+   ```bash
+   sudo yum install ffmpeg ffmpeg-devel
+   ```
+
+   Windows:
+   - 下载 FFmpeg: https://ffmpeg.org/download.html
+   - 将 FFmpeg 添加到系统 PATH
+
+# 2. 安装 Python 依赖
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+   注意：Whisper 模型会在首次运行时自动下载，这可能需要一些时间。
 ```
 
 ## 运行与维护
